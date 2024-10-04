@@ -9,6 +9,12 @@ module.exports = {
 		react: {
 			version: 'detect',
 		},
+		'import/resolver': {
+			alias: {
+				map: [['@', './src']],
+				extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+			},
+		},
 	},
 	extends: [
 		'plugin:@typescript-eslint/recommended',
