@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 5080",
     "build": "next build",
     "start": "next start",
     "stylelint": "next lint && stylelint \"src/**/*.css\"",
@@ -45,7 +45,7 @@
     "@typescript-eslint/parser": "5.59.11",
     "autoprefixer": "^10.4.14",
     "commitizen": "4.3.0",
-    "cross-env": "7.0.3",
+    "cross-env": "^7.0.3",
     "css-loader": "6.8.1",
     "cssnano": "6.0.1",
     "cz-conventional-changelog": "3.3.0",
