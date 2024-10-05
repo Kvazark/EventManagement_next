@@ -1,7 +1,4 @@
-export interface IUser {
-	id: string;
-	email: string;
-	fullName: string;
-	password: string;
+export interface IUser extends IUserBase {
 	role: 'admin' | 'client';
+	password: string;
 }

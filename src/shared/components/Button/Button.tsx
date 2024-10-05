@@ -17,6 +17,7 @@ type TButtonProps = {
 	onClick?: () => void;
 	type?: 'submit' | 'reset' | 'button';
 	dataTestid?: string;
+	href?: string;
 };
 export const CustomButton = ({
 	label,
@@ -28,6 +29,7 @@ export const CustomButton = ({
 	onClick,
 	type,
 	dataTestid,
+	href,
 }: TButtonProps) => {
 	const getButtonStyles = () => {
 		switch (view) {
@@ -119,6 +121,7 @@ export const CustomButton = ({
 			onClick={onClick}
 			disabled={disabled}
 			type={type}
+			href={href}
 			sx={{
 				display: 'flex',
 				gap: '8px',
