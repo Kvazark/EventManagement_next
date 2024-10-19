@@ -1,14 +1,15 @@
 export interface IEvent {
 	id: string;
-	author: IUserBase;
-	createdAt: Date;
-	updatedAt?: Date;
-	updatedBy?: IUserBase;
+	//author: IUserBase;
+	authorId: string;
+	createdAt: Date | string;
+	updatedAt?: Date | string;
+	updatedBy?: IUserBase | string;
 	title: string;
-	startDate: Date;
-	endDate: Date;
-	format: IOnlineFormat | IOfflineFormat;
+	startDate: Date | string;
+	endDate: Date | string;
+	format: IOnlineFormat | IOfflineFormat | IHybridFormat;
 	description?: string;
-	imageUrl: string;
-	categories?: ICategory[];
+	image: string;
+	categories?: ICategory[] | string[];
 }

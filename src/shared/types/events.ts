@@ -7,17 +7,17 @@ declare global {
 	}
 
 	export interface IOnlineFormat {
-		formatName: 'онлайн';
+		formatName: 'онлайн' | string;
 		link: string;
 	}
 
 	export interface IOfflineFormat {
-		formatName: 'офлайн';
+		formatName: 'офлайн' | string;
 		address: string;
 	}
 
 	export interface IHybridFormat {
-		formatName: 'гибрид';
+		formatName: 'гибрид' | string;
 		link: string;
 		address: string;
 	}
