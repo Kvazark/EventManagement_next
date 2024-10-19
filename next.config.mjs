@@ -5,7 +5,11 @@ const nextConfig = {
 	},
 	pageExtensions: ['page.tsx', 'page.ts', 'tsx', 'ts', 'jsx', 'js', '_*.tsx', '_*.ts'],
 	webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
-		// Your other webpack configurations if necessary
+		config.module.rules.push({
+			test: /\.svg$/i,
+			issuer: /\.[jt]sx?$/,
+			use: ['@svgr/webpack'],
+		})
 		return config;
 	},
 };

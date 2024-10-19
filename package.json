@@ -18,7 +18,8 @@
     "@emotion/react": "11.11.4",
     "@emotion/styled": "11.11.5",
     "@hookform/resolvers": "3.9.0",
-    "@mui/material": "5.16.0",
+    "@mui/icons-material": "^6.1.4",
+    "@mui/material": "6.1.4",
     "@reduxjs/toolkit": "^2.2.7",
     "@types/redux-persist": "^4.3.1",
     "classnames": "2.3.2",
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@feature-sliced/eslint-config": "0.1.0-beta.6",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "18.2.25",
     "@types/react-dom": "^18.2.1",

@@ -54,9 +54,6 @@ export const CustomButton = ({
 					'&:hover': {
 						background: 'var(--background-gray)',
 						border: '1px solid var(--accent-color)',
-						'svg path': {
-							fill: 'var(--black-color)',
-						},
 					},
 				};
 			case 'outlined-on-light':
@@ -122,6 +119,7 @@ export const CustomButton = ({
 			disabled={disabled}
 			type={type}
 			href={href}
+			className='btn'
 			sx={{
 				display: 'flex',
 				gap: '8px',
