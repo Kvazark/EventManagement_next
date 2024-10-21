@@ -1,0 +1,69 @@
+.MuiDateCalendar-root{
+	//background: aquamarine;
+	width: 1000px;
+	min-height: 80%;
+}
+.MuiPickersFadeTransitionGroup-root{
+	font-size: 42px;
+	flex: 1;
+}
+.MuiDayCalendar-root{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.MuiTypography-root {
+	font-size: 36px;
+}
+.MuiDayCalendar-header{
+	gap: 7%;
+}
+///Недели
+.MuiTypography-root{
+	width: 54px;
+	height: 54px;
+}
+
+.MuiPickersSlideTransition-root{
+	flex: 1;
+	display: flex;
+	overflow: unset;
+}
+
+.MuiDayCalendar-monthContainer{
+	margin: 24px 0 0 0;
+}
+
+.MuiDayCalendar-weekContainer{
+	margin: 0 0 7% 0;
+	gap: 7%;
+}
+.MuiBadge-root{
+	.MuiButtonBase-root{
+		font-size: 24px;
+	}
+
+	button.MuiButtonBase-root.MuiPickersDay-root.Mui-selected {
+		background: var(--accent-color);
+	}
+	button.MuiButtonBase-root[aria-current="date"] {
+		border: 3px solid var(--accent-color);
+	}
+}
+///дни
+.MuiPickersDay-root{
+	//background: antiquewhite;
+	width: 54px;
+	height: 54px;
+	color: var(--white-color);
+}
+
+
+
+//button.MuiButtonBase-root.MuiPickersDay-root:not(.Mui-selected) {
+//	border: 3px solid var(--accent-color);
+//}
+//button.MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected){
+//	border: 3px solid var(--accent-color);
+//}
