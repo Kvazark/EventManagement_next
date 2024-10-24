@@ -11,8 +11,8 @@ export default function _home() {
 				top='78px'
 				left='0'
 				sx={{
-					backgroundImage:
-						"url('https://i.pinimg.com/originals/26/94/0d/26940d1bdb5e82a5d32845f31a0ade1f.gif')",
+					// backgroundImage:
+					// 	"url('https://i.pinimg.com/originals/26/94/0d/26940d1bdb5e82a5d32845f31a0ade1f.gif')",
 					backgroundSize: 'fit-content',
 					filter: 'blur(5px)',
 				}}
@@ -25,8 +25,8 @@ export default function _home() {
 				display='flex'
 				flexDirection='column'
 				alignItems='center'
-				gap='8px'>
-				<h1>Main Page</h1>
+				gap='24px'>
+				<h1>Добро пожаловать!</h1>
 				<Box>
 					<Button label='Предстоящие события' view='primary' href='/events' />
 				</Box>

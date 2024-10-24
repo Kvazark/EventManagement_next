@@ -1,4 +1,5 @@
-import { AppBar, Box, Button } from '@mui/material';
+import { AppBar } from '@mui/material';
+import { HeaderMenu } from '@/features/headerMenu';
 
 export const Header = () => {
 	return (
@@ -9,11 +10,7 @@ export const Header = () => {
 				height: '80px',
 				backgroundColor: 'var(--black-color)',
 			}}>
-			This is header
-			<Box>
-				<Button href='/admin'>Go to Admin</Button>
-				<Button href='/client'>Go to Client Account</Button>
-			</Box>
+			<HeaderMenu />
 		</AppBar>
 	);
 };
