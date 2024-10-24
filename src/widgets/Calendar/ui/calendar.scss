@@ -1,7 +1,7 @@
 .MuiDateCalendar-root{
 	//background: aquamarine;
-	width: 1000px;
-	min-height: 70%;
+	width: 70%;
+	min-height: 75%;
 }
 .MuiPickersFadeTransitionGroup-root{
 	font-size: 42px;
@@ -13,16 +13,21 @@
 	gap: 16px;
 }
 
-.MuiDayCalendar-header{
+
+.MuiDayCalendar-header {
 	gap: 7%;
-}
-///Недели
-.MuiTypography-root{
-	font-size: 36px;
-	width: 54px;
-	height: 54px;
+	//border-bottom: 1px solid var(--accent-color);
+
+	.MuiTypography-root{
+		font-size: 36px;
+		width: 54px;
+		height: 54px;
+		color: var(--custom-gray);
+	}
+
 }
 
+///Недели
 .MuiPickersSlideTransition-root{
 	flex: 1;
 	display: flex;
@@ -31,6 +36,7 @@
 
 .MuiDayCalendar-monthContainer{
 	margin: 16px 0 0 0;
+
 }
 
 .MuiDayCalendar-weekContainer{
@@ -58,18 +64,10 @@
 }
 
 
-
-//button.MuiButtonBase-root.MuiPickersDay-root:not(.Mui-selected) {
-//	border: 3px solid var(--accent-color);
-//}
-//button.MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected){
-//	border: 3px solid var(--accent-color);
-//}
-
-@media screen and (max-height: 1000px) {
+@media screen and (max-height: 1100px) {
 	.MuiDateCalendar-root{
 		width: 800px;
-		min-height: 60%;
+		min-height: 85%;
 	}
 
 	.MuiPickersFadeTransitionGroup-root{
@@ -77,14 +75,14 @@
 		flex: 1;
 	}
 
-	.MuiTypography-root{
-		font-size: 24px;
-		width: 38px;
-		height: 38px;
-	}
-
 	.MuiDayCalendar-header{
 		gap: 6%;
+
+		.MuiTypography-root{
+			font-size: 24px;
+			width: 38px;
+			height: 38px;
+		}
 	}
 
 	.MuiDayCalendar-monthContainer{
@@ -110,5 +108,12 @@
 	.MuiPickersDay-root{
 		width: 38px;
 		height: 38px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.MuiDateCalendar-root{
+		width: 90%;
+		min-height: 100%;
 	}
 }
