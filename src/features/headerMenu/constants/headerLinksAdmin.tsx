@@ -3,12 +3,7 @@ import {
 	ManagerEventsIcon,
 	ProfileAdminIcon,
 } from '@/shared/icons';
-import { ReactNode } from 'react';
-
-type THeaderLinks = {
-	link: string;
-	icon: ReactNode | JSX.Element;
-};
+import { THeaderLinks } from '@/features/headerMenu/types';
 
 export const headerLinksAdmin: THeaderLinks[] = [
 	{

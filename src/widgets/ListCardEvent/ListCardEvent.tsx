@@ -2,17 +2,12 @@
 import './cardEvent.scss';
 import { CardEvent } from '@/widgets';
 import { eventsMocks } from '@/shared/api/mocks';
-import {
-	Pagination,
-	PaginationItem,
-	SvgIcon,
-	useMediaQuery,
-} from '@mui/material';
+import { Pagination, PaginationItem, useMediaQuery } from '@mui/material';
 import { ChangeEvent } from 'react';
 import { IEvent } from '@/entities/event';
 import { Button } from '@/shared/components';
 import { usePagination } from '@/shared/hooks/usePagination';
-import {LeftArrowIcon, RightArrowIcon} from "@/shared/icons";
+import { LeftArrowIcon, RightArrowIcon } from '@/shared/icons';
 
 export const ListCardEvent = () => {
 	const { currentPage, getCurrentData, setPagePaginated, countPages } =
@@ -47,7 +42,8 @@ export const ListCardEvent = () => {
 								<Button
 									view='outlined-on-dark'
 									label={!isSmallScreen ? 'Назад' : ''}
-									contentLeft={<LeftArrowIcon />
+									contentLeft={
+										<LeftArrowIcon />
 										// <SvgIcon component={LeftArrowIcon} inheritViewBox />
 									}
 								/>
